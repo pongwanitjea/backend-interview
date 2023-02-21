@@ -1,0 +1,22 @@
+jwt:
+  secret: password1234
+server:
+  port: 1234
+spring:
+  security:
+    filter:
+      order: 10
+    user:
+      password: 123456
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/my_database
+    username: my_user
+    password: my_password
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
